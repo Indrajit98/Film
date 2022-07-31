@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>film</title>
+  <!-- google font cdn link  -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap" rel="stylesheet" />
+  <!-- custom style css link  -->
+  <link rel="stylesheet" href="styles/style.css" />
+  <!-- tailwind cdn link  -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: "#da373d",
+            yellow: "#FECC02",
+          },
+          fontFamily: {
+            bebas: "Bebas Neue",
+            montserrat: "Montserrat",
+          },
+          backgroundImage: {
+            banner: "url('images/Header.png')",
+            cameraMan: "url('images/camera man 2.png')",
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body>
+  <header class="absolute w-full bg-white">
+    <nav class="container mx-auto flex justify-between pt-2 px-16 sm:text-xl text-sm font-bebas items-center">
+      <a class="sm:text-4xl" href="#">film</a>
+      <ul class="flex">
+        <li class="sm:px-3 px-1"><a href="#">About-Us</a></li>
+        <li class="sm:px-3 px-1"><a href="#">Our movies</a></li>
+        <li class="sm:px-3 px-1"><a href="#">Services</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="bg-banner h-screen bg-cover flex items-center">
+    <div class="container mx-auto sm:pl-16 p-3 ">
+      <p class="text-white font-bebas sm:text-xl text-base">Movie production studio</p>
+      <h1 class="font-bebas sm:text-7xl text-white">
+        Films MAde to <br />
+        <span class="text-yellow">production</span>
+      </h1>
+      <p class="text-white">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+        tellus, <br />
+        luctus nec ullamcorper mattis, pulvinar dapibus leo.
+      </p>
+      <button class="text-white sm:font-bebas sm:text-xl text-sm border sm:py-2 sm:px-4 p-1 sm:mt-5 mt-5">
+        Discover More
+      </button>
+    </div>
+  </section>
+  <main>
+    <section>
+      <div class="container mx-auto sm:border border-black p-5 ">
+        <div class="grid sm:grid-cols-2 sm:gap-x-20">
+          <div class="bg-cameraMan w-full bg-cover sm:h-[500px] h-[300px] relative flex justify-center">
+            <h1 class="sm:text-3xl absolute -bottom-5 py-3 px-24 bg-white rounded font-bebas shadow">
+              23 YEARS of EXPERIENCE
+            </h1>
+          </div>
+          <div class="sm:mt-0 mt-10 px-4">
+            <p class="font-bebas">About Us</p>
+            <h1 class="font-bebas sm:text-7xl text-2xl pb-3 ">
+              FIlming Experience <br />
+              Just Got better
+            </h1>
+            <p class="font-montserrat sm:text-base text-sm">
+              Primis lobortis adipiscing imperdiet dis ultricies. Id commodo <br>
+              interdum fermentum pede dictumst ipsum. Erat sapien phasellus <br>
+              suspendisse natoque nulla leo ornare mi. Pretium rhoncus <br>
+              venenatis ante dignissim aliquet faucibus tempus etiam feugiat.
+            </p>
+            <button class="sm:font-bebas sm:text-xl sm:py-2 py-1 px-2 sm:px-4 mt-5 border border-black">
+              Discover More
+            </button>
+          </div>
+        </div>
+        <div class="grid sm:grid-cols-3 sm:mt-24 sm:gap-x-20">
+          <div class="sm:px-0 sm:py-0  px-4 py-5 sm:shadow-none shadow">
+            <hr class="border border-black">
+            <h2 class="sm:text-5xl text-2xl font-bebas py-3">OUR VISION</h2>
+            <p class="sm:text-base text-sm font-montserrat">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+          </div>
+          
+          <div class="sm:px-0 sm:py-0  px-4 py-5 sm:shadow-none shadow">
+            <hr class="border border-black">
+            <h2 class="sm:text-5xl text-2xl font-bebas py-3">OUR VISION</h2>
+            <p class="sm:text-base text-sm font-montserrat">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+          </div>
+          <div class="sm:px-0 sm:py-0  px-4 py-5 sm:shadow-none shadow">
+            <hr class="border border-black">
+            <h2 class="sm:text-5xl text-2xl font-bebas py-3">OUR VISION</h2>
+            <p class="sm:text-base text-sm font-montserrat">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+  </main>
+</body>
+
+</html>
